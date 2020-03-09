@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkommensteuer</title>
+</head>
+
+<body>
+    <!-- 1. Wahl des Jahres
+    2. Wahl ob alleine oder zu zweit
+    3. Eingabe des zvE
+    4. Button zur Berechnung
+    5. Ergebnis Einkommensteuerhöhe -->
+    <h1>Einkommensteuer Berechnung</h1>
+
+    <form action="assets/js/main.js">
+        <label for="jahr">Jahr</label>
+        <select name="jahr" id="jahr">
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+        </select>
+        <label for="tarif">Tarif</label>
+        <select name="tarif" id="tarif">
+            <option value="grundtarif">Grundtarif</option>
+            <option value="splittingtarif">Splittingtarif</option>
+        </select>
+
+        <input type="text" id="zvE" placeholder="Geben sie Ihr zvE ein">
+        <input type="button" name="Berechnen" id="check" value="check" onclick="EStBerechnung()">
+
+    </form>
+    <p id="ergebnis"></p>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
