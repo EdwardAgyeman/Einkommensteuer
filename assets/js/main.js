@@ -1,11 +1,10 @@
-let zvE = document.getElementById("zvE");
 let ESt = document.getElementById("ergebnis");
+let zvE = document.getElementById("zvE");
+let tarif =document.getElementById("tarif");
+let jahr = document.getElementById("jahr");
 let y;
 let x;
 let z;
-let jahr = document.getElementById("jahr");
-let tarif =document.getElementById("tarif")
-
 // -----------------------------------------------------
 function EStBerechnung(){
     if (jahr.value == 2020) {
